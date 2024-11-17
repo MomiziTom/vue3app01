@@ -1,8 +1,10 @@
 <template>
+  <span id="top"></span>
   <nav class="display-pc">
     <table>
       <tbody>
 				<tr>
+          <td><router-link to="/#top">トップへ戻る</router-link></td>
           <td><router-link to="/#story">ストーリー</router-link></td>
           <td><router-link to="/#instructions">操作説明</router-link></td>
           <td><router-link to="/#character">キャラクター</router-link></td>
