@@ -1,5 +1,5 @@
 <template>
-  <span id="top"></span>
+   <span id="top"></span>
   <nav class="display-pc">
     <table>
       <tbody>
@@ -38,8 +38,8 @@
 }
 
 nav {
-  position:sticky;
-  top:20px;
+  position:fixed;
+  top:20px; right:20px;
 }
 
 nav table{

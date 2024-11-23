@@ -2,10 +2,12 @@
   <div id="character">
     <p>キャラクター紹介</p>
     <p>&lt;</p>
-    <div class="chara_explain">説明1</div>
-    <div class="chara_explain">説明2</div>
-    <div class="chara_explain">説明3</div>
-    <div class="chara_explain">説明4</div>
+    <div class="chara_explain" v-for="chex in $store.state.character" :key="chex">
+      <img :src="chex.face" alt="face" class="chara_face">
+      <div class="chara_name">{{ chex.name }}</div>
+      <img :src="chex.picture" alt="picture" class="chara_picture">
+      <div class="chara_profile">{{ chex.profile}}</div>
+    </div>
     <p>&gt;</p>
   </div>
 </template>

@@ -1,8 +1,9 @@
 <template>
-  <div id="animation">
+  <div id="animation_parent">
+    <div id="animation">
 
+    </div>
   </div>
-
   <div class="home">
     <StoryPage />
     <InstructionsPage />
@@ -58,7 +59,7 @@ export default {
   width: 100%; height:100%;
   left:0; top:0;
   background-color: black;
-  position: absolute;
+  position: fixed;
   z-index:999;
   transition: 0.5s;
 }
