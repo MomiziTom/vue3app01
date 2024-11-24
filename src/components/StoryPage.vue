@@ -18,8 +18,4 @@ export default {
 </script>
 
 <style scoped>
-#story{
-  width: 80vw;
-  height:500px;
-}
 </style>

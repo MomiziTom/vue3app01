@@ -2,6 +2,8 @@
   <div id="others">
     <p>開発言語</p>
     <div>JavaScript</div>
+    <p>使用素材</p>
+    <div>音源素材サイト名＆リンク</div>
   </div>
 </template>
 
@@ -13,7 +15,6 @@ export default {
 
 <style scoped>
 #others{
-  width: 80vw;
-  height:500px;
+  margin:auto;
 }
 </style>

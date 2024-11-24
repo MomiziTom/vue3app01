@@ -5,7 +5,7 @@ export default createStore({
     character: [
       {
         name: "シャララ",
-        profile: "主人公のエルフの女の子。エルフの森の番人。弓使いの名手。<br>妹のルーヤとともにエルフの森を守護している。<br>無限に矢を補給できる不思議な弓「エルフギア」を持っている。<br>家族思いの強いエルフ。クールビューティ風だが頑固で朴念仁で不愛想なだけ。",
+        profile: "主人公のエルフの女の子。エルフの森の番人。弓使いの名手。<br>妹のルーヤとともにエルフの森を守護している。<br>無限に矢を補給できる不思議な弓「エルフギア」を持っている。<br>家族思いの強いエルフ。クールビューティ風だがコミュ障なだけ。",
         face:require("@/assets/shalalaface.png"),
         picture:require("@/assets/shalala_chan.png"),
       },
