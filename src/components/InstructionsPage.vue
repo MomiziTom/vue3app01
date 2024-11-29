@@ -1,6 +1,6 @@
 <template>
   <div id="instructions">
-    <p>操作説明</p>
+    <p class="item_name">操作説明</p>
     <div>
       <div>
         会話パート

@@ -43,8 +43,7 @@ nav {
 }
 
 nav table{
-  margin: auto 10px auto auto;
-
+  padding: auto 10px auto auto;
 }
 
 nav a {
@@ -54,6 +53,10 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.item_name{
+  background-color:white;
 }
 
 @media screen and (min-width:768px){

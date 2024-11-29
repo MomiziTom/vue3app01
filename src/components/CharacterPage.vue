@@ -1,6 +1,6 @@
 <template>
   <div id="character">
-    <p>キャラクター紹介</p>
+    <p class="item_name">キャラクター紹介</p>
     <img class="chara_faces" :src="faces.face" alt="face" v-on:click="face_select" v-for="faces in $store.state.character" :key="faces">
     <div id="carousel_line">
       <p class="carousel_button" v-on:click="carousel_minus">&lt;</p>

@@ -1,6 +1,6 @@
 <template>
   <div id="story">
-    <p>ストーリー</p>
+    <p class="item_name">ストーリー</p>
     <div id="story_text">
       ここはエルフたちが住む平和な森。<br>
       しかし、この森を侵略しようとモンスターたちがやってきた！<br>
@@ -18,4 +18,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>

@@ -93,14 +93,20 @@ export default {
 #animation{
   width: 100%; height:100%;
   top:0; left:0;
-  background-color: rgb(0, 140, 25);
+  background-color: rgb(0, 0, 0);
   position: fixed;
   z-index: 998;
   transition: 0.5s;
 }
 
+#to_play{
+  width:100%; height:400px;
+}
+
 #home{
   width: 80vw;
   margin:0 auto;
+  background-color: rgb(37,133,57);
 }
+
 </style>
