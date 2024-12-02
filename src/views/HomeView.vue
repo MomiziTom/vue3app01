@@ -9,10 +9,15 @@
     <a href="https://5ricecakes.sakura.ne.jp/elfgirlshoot.html">遊んでみる</a>
   </div>
   <div id="home">
+    <TextScroll />
     <StoryPage />
+    <TextScroll />
     <InstructionsPage />
+    <TextScroll />
     <CharacterPage />
+    <TextScroll />
     <OthersPage />
+    <TextScroll />
   </div>
 </template>
 
@@ -22,6 +27,7 @@ import StoryPage from '@/components/StoryPage.vue'
 import InstructionsPage from '@/components/InstructionsPage.vue'
 import CharacterPage from '@/components/CharacterPage.vue'
 import OthersPage from '@/components/OthersPage.vue'
+import TextScroll from '@/components/TextScroll.vue'
 
 let op_text_timer;
 let op_timer;
@@ -34,6 +40,7 @@ export default {
     InstructionsPage,
     CharacterPage,
     OthersPage,
+    TextScroll
   },
   mounted: ()=>{
     const cover = document.getElementById("animation");
@@ -104,9 +111,10 @@ export default {
 }
 
 #home{
+  left: 0%;
   width: 80vw;
   margin:0 auto;
-  background-color: rgb(37,133,57);
+  background-color: rgb(61, 167, 84);
 }
 
 </style>
