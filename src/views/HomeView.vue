@@ -9,6 +9,9 @@
     <a href="https://5ricecakes.sakura.ne.jp/elfgirlshoot.html">遊んでみる</a>
   </div>
   <div id="home">
+    <div>
+      <img src="@/assets/top_picture.png" alt="top_picture" id="top_picture">
+    </div>
     <TextScroll />
     <StoryPage />
     <TextScroll />
@@ -107,7 +110,11 @@ export default {
 }
 
 #to_play{
-  width:100%; height:400px;
+  width:100%;
+}
+
+#top_picture{
+  width: 100%;
 }
 
 #home{

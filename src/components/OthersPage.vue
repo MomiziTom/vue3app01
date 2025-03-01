@@ -3,7 +3,7 @@
     <p class="item_name">開発言語</p>
     <div>JavaScript</div>
     <p class="item_name">音源素材</p>
-    <div>© Copyright 2021-2024 BGMと効果音・みんなの創作支援サイトＴスタ</div>
+    <div>BGMと効果音・みんなの創作支援サイトＴスタ</div>
 
   </div>
 </template>
