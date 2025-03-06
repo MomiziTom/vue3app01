@@ -70,6 +70,9 @@ function text_longer(){
 
 export default {
   name: 'TextScroll',
+  data:{
+	
+  }
   mounted: ()=>{
 	text_longer();
 	window.addEventListener('resize', text_longer);

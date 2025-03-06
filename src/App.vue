@@ -48,18 +48,6 @@ export default {
   color: #2c3e50;
 }
 
-nav {
-  background-color: white;
-  border-radius: 20px 0 0 20px;
-  border-top: 2px solid rgb(61, 167, 84);
-  border-left: 2px solid rgb(61, 167, 84);
-  border-bottom: 2px solid rgb(61, 167, 84);
-  z-index: 950;
-  position:fixed;
-  padding-right: 20px;
-  top:20px; right:0px;
-}
-
 nav table{
   padding: auto 10px auto auto;
 }
@@ -88,6 +76,19 @@ nav a {
 	.display-tablet-phone{
 		display:none;
 	}
+
+  nav {
+    background-color: white;
+    border-radius: 20px 0 0 20px;
+    border-top: 2px solid rgb(61, 167, 84);
+    border-left: 2px solid rgb(61, 167, 84);
+    border-bottom: 2px solid rgb(61, 167, 84);
+    z-index: 950;
+    position:fixed;
+    padding-right: 20px;
+    top:20px; right:0px;
+  }
+
 }
 
 /* タブレット表示*/
@@ -95,6 +96,20 @@ nav a {
 	.display-pc{
 		display:none;
 	}
+
+  nav {
+  background-color: white;
+  border-radius: 20px 0 0 20px;
+  border-top: 2px solid rgb(61, 167, 84);
+  border-left: 2px solid rgb(61, 167, 84);
+  border-bottom: 2px solid rgb(61, 167, 84);
+  z-index: 950;
+  position:fixed;
+  padding-right: 20px;
+  bottom:20px; right:0px;
+  font-size:14px;
+}
+
 }
 
 /* スマホ表示*/

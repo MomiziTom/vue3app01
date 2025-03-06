@@ -5,12 +5,12 @@
 
     </div>
   </div>
-  <div id="to_play">
-    <a href="https://5ricecakes.sakura.ne.jp/elfgirlshoot.html">遊んでみる</a>
-  </div>
   <div id="home">
     <div>
       <img src="@/assets/top_picture.png" alt="top_picture" id="top_picture">
+    </div>
+    <div id="to_play">
+      <a href="https://5ricecakes.sakura.ne.jp/elfgirlshoot.html"><img src="@/assets/play_switch.png" alt="遊んでみる"></a>
     </div>
     <TextScroll />
     <StoryPage />
