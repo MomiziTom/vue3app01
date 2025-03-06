@@ -1,84 +1,82 @@
 <template>
-	<section class="sec1">
+	<section class="sec1" :style="{ width: text_width + 'px'}">
 		<h1 class="sec1__title--first">
+			{{ egs_text }}
 		</h1>
 		<h1 class="sec1__title--second">
+			{{ egs_text }}
 		</h1>
 	</section>
 </template>
 
 <script>
-let egs_text = `Elf Girl Shoot
-	Elf Girl Shoot
-	Elf Girl Shoot
-	Elf Girl Shoot
-	Elf Girl Shoot
-	Elf Girl Shoot
-	Elf Girl Shoot
-	Elf Girl Shoot
-`
-let winsize = window.innerWidth;
-const flow_text1 = document.getElementsByClassName("sec1__title--first");
-	const flow_text2 = document.getElementsByClassName("sec1__title--second");
-
-function text_longer(){
-	for(let i = 0 ; i < flow_text1.length; i++){
-		flow_text1[i].textContent = egs_text;
-		flow_text2[i].textContent = egs_text;
-	}
-	winsize = window.innerWidth;
-	if(winsize > 1251){
-		egs_text = `Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-		`
-	}else{
-		egs_text = `Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-			Elf Girl Shoot
-		`
-	}
-
-}	
 
 
 export default {
   name: 'TextScroll',
-  data:{
-	
-  }
-  mounted: ()=>{
-	text_longer();
-	window.addEventListener('resize', text_longer);
+  data(){
+	return{
+		egs_text : `Elf Girl Shoot
+			Elf Girl Shoot
+			Elf Girl Shoot
+			Elf Girl Shoot
+			Elf Girl Shoot
+			Elf Girl Shoot
+			Elf Girl Shoot
+			Elf Girl Shoot
+		`,
+		text_width: 0,
+	};
   },
-  beforeUnmount: ()=> {
-    window.removeEventListener('resize', text_longer)
+  methods:{
+	text_longer: function(){
+		this.text_width = window.innerWidth - 9;
+		console.log(this.text_width);
+		if(window.innerWidth > 1250){
+			this.egs_text = `Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+			`
+		}else{
+			this.egs_text = `Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+				Elf Girl Shoot
+			`
+		}
+	}	
+  },
+  mounted: function(){
+	this.text_longer();
+	window.addEventListener('resize', this.text_longer);
+  },
+  beforeUnmount: function(){
+    window.removeEventListener('resize', this.text_longer)
   }
 }
 </script>
@@ -93,7 +91,7 @@ section{
 }
 
 .sec1 {
-    width: 100%vw;
+	width: 0;
     overflow: hidden;
 }
 
